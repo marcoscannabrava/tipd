@@ -13,8 +13,8 @@ import { Label } from "../../components/ui/label";
 
 const LoginPage = () => {
   return (
-    <div className="flex justify-center">
-      <Card className="w-full max-w-sm">
+    <div className="min-h-screen flex items-center justify-center bg-gray-400">
+      <Card className="w-full max-w-sm bg-amber-50">
         <CardHeader className="flex">
           <CardTitle>Login to your account</CardTitle>
           <CardDescription>
@@ -52,10 +52,10 @@ const LoginPage = () => {
           </form>
         </CardContent>
         <CardFooter className="flex-col gap-2">
-          <Button type="submit" className="w-full cursor-pointer">
+          <Button variant="outline" className="w-full cursor-pointer">
             Login
           </Button>
-          <Button variant="outline" className="w-full cursor-pointer">
+          <Button variant="destructive" className="w-full cursor-pointer">
             Login with Google
           </Button>
         </CardFooter>
