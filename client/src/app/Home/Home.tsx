@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-
 const Home = () => {
   const navigate = useNavigate();
 
@@ -7,7 +6,7 @@ const Home = () => {
     navigate("/login");
   }
   return (
-    <div className="bg-[#FBF9F4] min-h-screen font-sans">
+    <div className="min-h-screen font-sans">
       <header className="flex justify-between items-center p-6 max-w-7xl mx-auto">
         <div className="text-2xl font-bold">Tipd</div>
         <div className="md:flex items-center space-x-6">
@@ -47,23 +46,54 @@ const Home = () => {
           Get started
         </a>
       </main>
-      <section className="mt-32 mx-4">
+      <section className="my-32 mx-4 text-left pb-20 bg-[#FBF9F4]">
         <div className="max-w-4xl mx-auto bg-white rounded-3xl p-8 md:p-16 border-2 border-gray-200">
-          <h2 className="text-4xl md:text-6xl font-serif font-bold text-center">
+          <h2 className="text-4xl md:text-6xl font-serif font-bold mb-6 text-left">
             Payday your way
           </h2>
-          <p className="text-xl md:text-2xl text-gray-600 mt-6 text-center">
+          <p className="body-1">
             Decide how you want to earn, set your own terms and get paid
             directly. All from one place, at your own pace.
           </p>
-          <div className="text-center mt-8">
-            <a
-              href="#"
-              className="bg-black text-white px-8 py-4 rounded-full font-semibold inline-block"
-            >
-              Learn how Tipd works
-            </a>
+          <a
+            href="#"
+            className=" bg-black text-white px-8 py-4 rounded-full font-semibold inline-block mb-8"
+          >
+            Learn how Tipd works
+          </a>
+          <div className="flex justify-center gap-55 mt-10">
+            <img src="./man1.png" width={200} height={100} />
+            <img src="./money.svg" />
+            <img src="./man2.png" width={200} height={100} />
           </div>
+        </div>
+
+        <div className="max-w-4xl mx-auto bg-white rounded-3xl p-8 md:p-16 border-2 border-gray-200 mt-32">
+          <h2 className="text-4xl md:text-6xl font-serif font-bold mb-6 text-left">
+            The home of creative joy
+          </h2>
+          <p className="body-1 text-red">
+            When did churning out content, maximizing metrics and pushing for
+            profit become standard?
+          </p>
+          <p className="body-1">
+            At Tipd we don't conform to that kind of 'norm'.
+          </p>
+          <p className="body-1">
+            Whether you're making things and putting them out there or you're
+            showing the love for those that do - Tipd exists so that you can
+            create, share, connect and support each other on your own terms.
+          </p>
+          <p className="body-1">
+            "Together we're building a place where everyone can celebrate the
+            joy of being free to explore your passions at your own pace."
+          </p>
+          <a
+            href="#"
+            className="bg-black text-white px-8 py-4 rounded-full font-semibold inline-block mt-8"
+          >
+            Read Tipd's story
+          </a>
         </div>
       </section>
     </div>

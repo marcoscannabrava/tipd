@@ -14,7 +14,6 @@ export const UseTipdWith = [
   "TikTok",
   "Twitch",
   "X/Twitter",
-  "Medium",
   "Facebook",
   "GitHub",
   "Discord",
@@ -29,7 +28,6 @@ export const HelpSupport = [
 
 export const AboutTipd = [
   "Our story",
-  "We're hiring!",
   "Cookie settings",
   "Terms",
   "Privacy",

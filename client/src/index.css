@@ -1,2 +1,8 @@
 @import "tailwindcss";
-@tailwind utilities;
+/* @tailwind utilities; */
+
+/* @layer components {
+  .body-1 {
+    @apply mb-6 text-left text-gray-600 md:text-2xl bg-red;
+  }
+} */
