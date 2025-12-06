@@ -9,18 +9,18 @@ const Home = () => {
 
   return (
     <div className="min-h-screen font-sans">
-      <header className="flex justify-between items-center p-6 max-w-7xl mx-auto">
-        <div className="text-2xl font-bold">Tipd</div>
+      <header className="flex justify-between items-center px-15 py-3 max-w-7xl mx-auto">
+        <div className="text-5xl font-bold">Tipd</div>
         <div className="md:flex items-center space-x-6">
-          <a href="#" className="text-gray-600 hover:text-gray-900">
+          <a href="#" className="font-semibold hover:text-gray-900">
             How it works{" "}
           </a>
-          <a href="#" className="text-gray-600 hover:text-gray-900">
+          <a href="#" className="font-semibold hover:text-gray-900">
             Blog
           </a>
           <a
             href="#"
-            className="text-gray-600 hover:text-gray-900"
+            className="font-semibold hover:text-gray-900"
             onClick={handleLoginClick}
           >
             Log in
