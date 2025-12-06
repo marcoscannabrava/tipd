@@ -1,10 +1,12 @@
 import { useNavigate } from "react-router-dom";
+import PaydaySection from "./PaydaySection";
 const Home = () => {
   const navigate = useNavigate();
 
   function handleLoginClick() {
     navigate("/login");
   }
+
   return (
     <div className="min-h-screen font-sans">
       <header className="flex justify-between items-center p-6 max-w-7xl mx-auto">
@@ -47,32 +49,12 @@ const Home = () => {
         </a>
       </main>
       <section className="my-32 mx-4 text-left pb-20 bg-[#FBF9F4]">
-        <div className="max-w-4xl mx-auto bg-white rounded-3xl p-8 md:p-16 border-2 border-gray-200">
-          <h2 className="text-4xl md:text-6xl font-serif font-bold mb-6 text-left">
-            Payday your way
-          </h2>
-          <p className="body-1">
-            Decide how you want to earn, set your own terms and get paid
-            directly. All from one place, at your own pace.
-          </p>
-          <a
-            href="#"
-            className=" bg-black text-white px-8 py-4 rounded-full font-semibold inline-block mb-8"
-          >
-            Learn how Tipd works
-          </a>
-          <div className="flex justify-center gap-55 mt-10">
-            <img src="./man1.png" width={200} height={100} />
-            <img src="./money.svg" />
-            <img src="./man2.png" width={200} height={100} />
-          </div>
-        </div>
-
+        <PaydaySection/>
         <div className="max-w-4xl mx-auto bg-white rounded-3xl p-8 md:p-16 border-2 border-gray-200 mt-32">
           <h2 className="text-4xl md:text-6xl font-serif font-bold mb-6 text-left">
             The home of creative joy
           </h2>
-          <p className="body-1 text-red">
+          <p className="body-1">
             When did churning out content, maximizing metrics and pushing for
             profit become standard?
           </p>
