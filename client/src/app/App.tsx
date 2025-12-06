@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import LoginPage from "./login/page";
 import Home from "./Home/Home";
-import Footer from "./footer/Footer";
 
 function App() {
 
@@ -13,7 +12,6 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
         </Routes>
       </main>
-      <Footer />
     </div>
   );
 }

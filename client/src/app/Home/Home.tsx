@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import PaydaySection from "./PaydaySection";
+import Footer from "../footer/Footer";
 const Home = () => {
   const navigate = useNavigate();
 
@@ -78,6 +79,7 @@ const Home = () => {
           </a>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };
