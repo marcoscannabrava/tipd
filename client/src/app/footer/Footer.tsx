@@ -1,4 +1,4 @@
-import { AboutTipd, Features, HelpSupport, UseTipdWith } from "./data";
+import {data} from "./data";
 
 const Footer = () => {
   return (
@@ -26,9 +26,9 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-2">Features</h3>
             <ul>
-              {Features.map((item) => (
+              {data.Features.map((item, id) => (
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline" key={id}>
                     {item}
                   </a>
                 </li>
@@ -38,9 +38,9 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-2">Use Tipd with</h3>
             <ul>
-              {UseTipdWith.map((item) => (
+              {data.UseTipdWith.map((item, id) => (
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline" key={id}>
                     {item}
                   </a>
                 </li>
@@ -50,9 +50,9 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-2">Help & Support</h3>
             <ul>
-              {HelpSupport.map((item) => (
+              {data.HelpSupport.map((item, id) => (
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline" key={id}>
                     {item}
                   </a>
                 </li>
@@ -62,9 +62,9 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-2">About Tipd</h3>
             <ul>
-              {AboutTipd.map((item) => (
+              {data.AboutTipd.map((item, id) => (
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline" key={id}>
                     {item}
                   </a>
                 </li>
